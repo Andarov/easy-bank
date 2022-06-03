@@ -301,3 +301,70 @@ a {
     margin: 0;
     letter-spacing: -0.25px;
 }
+
+/* Articles */
+.articles {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--hero-bg);
+}
+
+.articles__heading {
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: var(--heading-color);
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.articles__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: -30px;
+}
+
+.articles__item {
+    width: 255px;
+    background-color: var(--white);
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.articles__img {
+    width: 255px;
+    height: 206px;
+}
+
+.articles__content {
+    padding: 14px 24px 24px 24px;
+}
+
+.articles__author {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: -0.15625px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.articles__title {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.285714px;
+    color: var(--heading-color);
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.articles__text {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.203125px;
+    margin: 0;
+}
