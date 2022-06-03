@@ -1,11 +1,36 @@
 :root {
-    --text-color: ;
-    --font-family: ;
-    --body-bg-color: ;
+    --text-color: #9597A5;
+    --heading-color: #2D314D;
+    --white: #fff;
 }
 
 /* FONTS */
+@font-face {
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 100;
+    src:url("../fonts/public-sans-v13-latin-100.woff2") format("woff2"), 
+         url("../fonts/public-sans-v13-latin-100.woff") format("woff");
+    font-display: swap;
+  }
 
+@font-face {
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    src:url("../fonts/public-sans-v13-latin-regular.woff2") format("woff2"), 
+         url("../fonts/public-sans-v13-latin-regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 500;
+    src:url("../fonts/public-sans-v13-latin-500.woff2") format("woff2"), 
+         url("../fonts/public-sans-v13-latin-500.woff") format("woff");
+    font-display: swap;
+  }
 
 html {
     height: 100%;
@@ -28,12 +53,11 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: var(--body-bg-color);
-    font-family: var(--font-family);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
+    background-color: var(--white);
+    font-family: "Public Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
     color: var(--text-color);
 }
 
@@ -49,7 +73,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: px;
+    max-width: 1150px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
