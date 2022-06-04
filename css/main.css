@@ -353,7 +353,7 @@ a {
     margin-bottom: 8px;
 }
 
-.articles__title {
+.articles__link {
     font-weight: 100;
     font-size: 16px;
     line-height: 20px;
@@ -361,6 +361,11 @@ a {
     color: var(--heading-color);
     margin: 0;
     margin-bottom: 8px;
+    transition: color 0.4s ease;
+}
+
+.articles__link:hover {
+    color: var(--hover-color);
 }
 
 .articles__text {
