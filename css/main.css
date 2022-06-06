@@ -99,7 +99,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 4px;
 }
 
 .header__logo-link {
@@ -128,6 +127,9 @@ a {
 }
 
 .sitenav__item {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
     flex-shrink: 0;
 }
 
@@ -145,14 +147,14 @@ a {
     line-height: 16px;
     color: var(--text-color);
     transition: border-color 0.4s ease;
-    margin-top: 32px;
   }
 .sitenav__link::after{
+    position: absolute;
+    bottom: 0;
     content: "";
     display: inline-block;
-    width: 51px;
+    width: 100%;
     height: 4px;
-    margin-top: 28px;
     background-color: transparent;
 }
 .sitenav__link:hover:after{
@@ -160,6 +162,7 @@ a {
 }
 
 .btn {
+    position: relative;
     padding: 8px 36px 8px 33px;
     background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
     border-radius: 22px;
@@ -170,14 +173,20 @@ a {
     white-space: nowrap;
 } 
 
-.btn:hover {
-    opacity: 0.8;
+.btn::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 22px;
+    content: "";
 }
 
-.btn:active {
-    opacity: 0.4;
+.btn:hover::after {
+    background-color: rgba(255, 255, 255, 0.4);
 }
-
 
 /* Hero */
 .hero {
