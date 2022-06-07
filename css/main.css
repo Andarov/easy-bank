@@ -146,8 +146,12 @@ a {
     font-size: 14px;
     line-height: 16px;
     color: var(--text-color);
-    transition: border-color 0.4s ease;
-  }
+}
+
+.sitenav__link:hover {
+    color: var(--heading-color);
+}
+
 .sitenav__link::after{
     position: absolute;
     bottom: 0;
