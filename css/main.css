@@ -137,7 +137,6 @@ a {
     margin-right: 32px;
 }
 
-
 .sitenav__link {
     display: flex;
     flex-direction: column;
@@ -319,7 +318,7 @@ a {
 /* Articles */
 .articles {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 76px;
     background-color: var(--hero-bg);
 }
 
@@ -330,7 +329,7 @@ a {
     letter-spacing: -0.714286px;
     color: var(--heading-color);
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .articles__list {
@@ -349,12 +348,13 @@ a {
 }
 
 .articles__img {
+    display: block;
     width: 255px;
-    height: 206px;
+    height: 200px;
 }
 
 .articles__content {
-    padding: 14px 24px 24px 24px;
+    padding: 23px;
 }
 
 .articles__author {
@@ -391,7 +391,7 @@ a {
 /* Footer */
 .footer {
     background-color: var(--heading-color);
-    padding-top: 45px;
+    padding-top: 48px;
     padding-bottom: 48px;
 }
 
